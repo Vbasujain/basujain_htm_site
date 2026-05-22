@@ -7,6 +7,7 @@
     <style>
       body {
         background-color: #eaf6f6;
+        font-family: "Times New Roman", serif;
       }
 
       hr {
@@ -15,9 +16,31 @@
         width: 10%;
         border-width: 6px;
       }
+
+      a {
+        color: #13678a;
+        text-decoration: none;
+      }
+
+      table {
+        margin: auto;
+      }
+
+      #main-table {
+        width: 90%;
+      }
+
+      .section-title {
+        text-align: center;
+        font-style: italic;
+      }
+
+      .simple-box {
+        padding: 10px;
+      }
     </style>
-    <link rel="icon" href="images\favicon.ico" />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="icon" href="images/favicon.ico" />
   </head>
 
   <body>
@@ -25,15 +48,15 @@
       <font face="algerian">my personal cv</font>
     </marquee>
 
-    <table cellspacing="30">
+    <table cellspacing="30" id="main-table">
       <tr>
         <td>
           <img
             id="prlphoto"
             src="images/basuimg.png"
             alt="basu jain"
-            width="200"
-            height="200"
+            width="220"
+            height="220"
           />
         </td>
 
@@ -43,107 +66,342 @@
               <center>Basu Jain</center>
             </u>
           </h1>
+
           ~VasuDev
+
           <p>
-            <em>Sophomore at <strong>SGSITS Indore.</strong></em>
+            <em>
+              Executive Embedded System Software Engineer |
+              <strong>SGSITS Indore</strong>
+            </em>
           </p>
+
+          <p>
+            Working on OpenCPU RTOS based firmware for LTE Cat-1 IoT modules.
+          </p>
+
+          <p>
+            Embedded C • MQTT • UART • BLE • HTTPS • RTOS • FOTA
+          </p>
+
           <p>I❤️cycling & 🎵 gives me peace.</p>
-          <p>Pursuing btech in electronics and instrumentation engineering.</p>
-          <a href="https://www.linkedin.com/in/basu-jain-2b8703220/"
-            >My linkedin
-          </a>
+
+          <p>
+            Pursuing practical engineering over fancy buzzwords since before it
+            was cool 😎
+          </p>
+
           <p>Introvert outside extrovert inside.</p>
+
+          <a href="https://www.linkedin.com/in/basu-jain-2b8703220/">
+            My linkedin
+          </a>
+
+          <br /><br />
+
+          <a href="https://github.com/Vbasujain">
+            My github
+          </a>
         </td>
       </tr>
     </table>
 
     <hr />
+
     <center>
-      <h2><font face="Times New Roman"></font> <i>My Hobbies</i></h2>
+      <h2 class="section-title">Professional Summary</h2>
+    </center>
+
+    <div class="simple-box">
+      Embedded software engineer with hands-on experience in OpenCPU RTOS-based
+      firmware development for 4G LTE Cat-1 IoT modules like EC200, SLM320 and
+      FC41D.
+
+      <br /><br />
+
+      Worked on production firmware deployed in 200,000+ solar pump controllers
+      with FOTA update capability.
+
+      <br /><br />
+
+      Skilled in Embedded C, UART, MQTT, HTTP, BLE, Flash memory operations,
+      debugging, and scalable IoT systems.
+    </div>
+
+    <hr />
+
+    <center>
+      <h2 class="section-title">My Skills</h2>
+    </center>
+
+    <table cellspacing="15">
+      <tr>
+        <td>Protocols</td>
+        <td>UART, MQTT(S), BLE, HTTPS, SPI, OTA</td>
+      </tr>
+
+      <tr>
+        <td>Modules / MCUs</td>
+        <td>ESP32, EC200, SLM320, FC41D</td>
+      </tr>
+
+      <tr>
+        <td>Languages</td>
+        <td>Embedded C, C++</td>
+      </tr>
+
+      <tr>
+        <td>Concepts</td>
+        <td>RTOS, OpenCPU, Log Debugging, AT Commands</td>
+      </tr>
+
+      <tr>
+        <td>Tools</td>
+        <td>VS Code, GDB, CoolWatcher, Excel</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <center>
+      <h2 class="section-title">Experience</h2>
+    </center>
+
+    <table cellspacing="20">
+      <tr>
+        <td>
+          <strong>Shakti Pumps India Limited</strong>
+          <br />
+          Executive IoT Engineer
+          <br />
+          Jan 2025 - Present
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          ● Developed OpenCPU firmware in Embedded C for SLM320 LTE Cat-1 IoT
+          dongles reducing hardware cost by 30%.
+          <br /><br />
+
+          ● Delivered 5+ production firmware releases for EC200 based 4G
+          dongles deployed across 200,000+ solar pumps.
+          <br /><br />
+
+          ● Worked on MQTT, UART, BLE server, HTTPS client/server, JSON parsing,
+          SPI NOR flash and FOTA update systems.
+          <br /><br />
+
+          ● Debugged RTOS race conditions, memory leaks and field issues using
+          CoolWatcher logs.
+          <br /><br />
+
+          ● Developed local webpage server over FC41D WiFi module.
+        </td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <center>
+      <h2 class="section-title">My Hobbies</h2>
     </center>
 
     <main>
       <section>
-        <div>coding</div>
-        <span>writing </span>
+        <center>
+          <div>coding</div>
+          <span>writing</span><br />
+          <span>Hindi Poetry</span><br />
+          <span>Ukulele</span><br />
+          <span>Bicycling</span><br />
+          <span>Sketching</span>
+        </center>
       </section>
 
-      <hr>
+      <hr />
 
-      <center>My academic history</center>
-      <table>
+      <center>
+        <h2 class="section-title">My Academic History</h2>
+      </center>
+
+      <table cellspacing="15">
         <thead>
           <tr>
             <th>Institution</th>
             <th>Duration</th>
             <th>Grade</th>
-            <th>detail</th>
+            <th>Detail</th>
           </tr>
         </thead>
+
         <tbody>
           <tr>
-            <td><a href="http://www.dreamworldschool.in/">D.W.S</a></td>
+            <td>
+              <a href="http://www.dreamworldschool.in/">D.W.S</a>
+            </td>
+
             <td>3 years</td>
             <td></td>
             <td>2006-2009</td>
           </tr>
+
           <tr>
             <td>
-              <a href="https://www.pemschool.in/gallerysub.aspx?id=10"
-                >P.E.M.S</a
-              >
+              <a href="https://www.pemschool.in/gallerysub.aspx?id=10">
+                P.E.M.S
+              </a>
             </td>
-            <td>10 yerars</td>
-            <td>&nbsp;&nbsp;&nbsp;92%</td>
+
+            <td>10 years</td>
+            <td>92%</td>
             <td>2009-2019</td>
           </tr>
+
           <tr>
             <td>
-              <a href="http://angelsabode.co.in/index.php/index.php">A.A.P.S</a>
+              <a href="http://angelsabode.co.in/index.php/index.php">
+                A.A.P.S
+              </a>
             </td>
-            <td>2 year</td>
-            <td>&nbsp;&nbsp;&nbsp;91%</td>
+
+            <td>2 years</td>
+            <td>91.8%</td>
             <td>2019-2021</td>
           </tr>
+
           <tr>
-            <td><a href="https://www.allen.ac.in/indore/">ALLEN</a></td>
+            <td>
+              <a href="https://www.allen.ac.in/indore/">ALLEN</a>
+            </td>
+
             <td>1 year</td>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>Scholarship Batch</td>
             <td>2019-2020</td>
           </tr>
+
           <tr>
-            <td><a href="https://www.sgsits.ac.in/">SGSITS</a></td>
-            <td>ongoing</td>
-            <td></td>
+            <td>
+              <a href="https://www.sgsits.ac.in/">SGSITS</a>
+            </td>
+
             <td>2021-2025</td>
+            <td>CGPA: 7.68 | SGPA: 9.4</td>
+            <td>B.Tech E&I</td>
           </tr>
         </tbody>
       </table>
 
-<div>
-<center>my projects</center> <br>
-  <table cellspacing = "30">
-<tr>
-  <th>project name</th>
-  <th>project link</th>
-</tr>
+      <hr />
 
-<tr>
-<td>Basu jain movie and anime review</td>
-<td> <a href=" 2.4 Movie Ranking Project\solution.html ">click here</a> </td>
-</tr>
+      <center>
+        <h2 class="section-title">My Projects</h2>
+      </center>
 
-<tr>
-  <td>my personal blog</td>
-  <td><a href="personal blog\myblog.html">click here</a></td>
-</tr>
-</div>
-    
+      <table cellspacing="30">
+        <tr>
+          <th>Project Name</th>
+          <th>Details</th>
+        </tr>
 
+        <tr>
+          <td>Well Posture Guide</td>
+          <td>
+            ESP32 based posture monitoring device with flex sensors, vibration
+            alerts and local web interface.
+          </td>
+        </tr>
 
+        <tr>
+          <td>Beejbot</td>
+          <td>
+            Automated seed sowing robot using ESP8266, MPU6050 and motor
+            drivers.
+          </td>
+        </tr>
 
+        <tr>
+          <td>Automatic Water Level Alarm</td>
+          <td>
+            220V based water level monitoring system with buzzer, LEDs and
+            7-segment display.
+          </td>
+        </tr>
 
+        <tr>
+          <td>Basu jain movie and anime review</td>
+          <td>
+            <a href="2.4 Movie Ranking Project/solution.html">
+              click here
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>my personal blog</td>
+          <td>
+            <a href="personal blog/myblog.html">click here</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Rat in a Maze Simulator</td>
+          <td>JavaScript based visualization project.</td>
+        </tr>
+
+        <tr>
+          <td>News Website</td>
+          <td>Simple JavaScript based news web app.</td>
+        </tr>
       </table>
+
+      <hr />
+
+      <center>
+        <h2 class="section-title">Leadership & Activities</h2>
+      </center>
+
+      <div class="simple-box">
+        ● Electronics Project Team Lead at AICTE IDEA Lab student committee.
+        <br /><br />
+
+        ● Organized technical workshops and recruitment drives for 200+
+        participants.
+        <br /><br />
+
+        ● Secured sponsorship funding of ₹20,000+ for college events.
+        <br /><br />
+
+        ● Served as Head of the Hindi Department in NSS.
+        <br /><br />
+
+        ● Anchored induction programs, participated in street plays and recited
+        self-written Hindi poetry.
+      </div>
+
+      <hr />
+
+      <center>
+        <h2 class="section-title">Achievements</h2>
+      </center>
+
+      <div class="simple-box">
+        ● MP Govt Medhavi Vidyarthi full tuition scholarship.
+        <br /><br />
+
+        ● JEE coaching scholarships from Allen, Akash and Vision.
+        <br /><br />
+
+        ● IIT JEE Mains AIR 89517.
+        <br /><br />
+
+        ● ICAR AIEEA 96 percentile.
+        <br /><br />
+
+        ● Single digit rank twice in district level quizzes.
+      </div>
+
+      <hr />
 
       <div>
         <a href="contact.html" target="_blank">
@@ -151,11 +409,5 @@
         </a>
       </div>
     </main>
-
-
   </body>
 </html>
-
-<!-- https://docs.emmet.io/cheat-sheet/  atom cheatsheat-->
-<!-- utf 8 mean encoding sys standard,unicode-table.com emoji -->
-<!-- mdn webdocs documentation -->
